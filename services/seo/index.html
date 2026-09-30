@@ -4,16 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
-<title>SEO Agency in India | UHX MEDIA</title>
+<title>SEO Agency in India | Search Engine Optimization | UHX MEDIA</title>
 
 <meta
   name="description"
-  content="UHX MEDIA is an SEO agency in India helping businesses improve search visibility, organic traffic and digital growth through technical SEO, on-page SEO, content and search strategy."
+  content="UHX MEDIA is an SEO agency in India helping businesses improve search visibility, attract qualified traffic and build sustainable organic growth."
 >
 
 <meta
   name="keywords"
-  content="SEO agency India, SEO agency, search engine optimization India, SEO services India, technical SEO, on-page SEO, local SEO, SEO consultant, UHX MEDIA"
+  content="SEO agency India, SEO company India, search engine optimization agency, SEO services India, digital marketing SEO, local SEO, technical SEO, UHX MEDIA"
 >
 
 <meta name="author" content="Ujjwal Jain">
@@ -21,25 +21,39 @@
 <meta name="theme-color" content="#07070a">
 
 <link rel="canonical" href="https://uhxmedia.online/services/seo/">
-<link rel="icon" href="../../assets/icons/favicon.svg" type="image/svg+xml">
+
+<link
+  rel="icon"
+  href="../../assets/icons/favicon.svg"
+  type="image/svg+xml"
+>
 
 <!-- OPEN GRAPH -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="UHX MEDIA">
-<meta property="og:title" content="SEO Agency in India | UHX MEDIA">
+<meta
+  property="og:title"
+  content="SEO Agency in India | UHX MEDIA"
+>
 <meta
   property="og:description"
-  content="SEO strategy built to improve visibility, organic traffic and long-term digital growth."
+  content="Search visibility built around strategy, technical SEO, useful content and measurable organic growth."
 >
-<meta property="og:url" content="https://uhxmedia.online/services/seo/">
+<meta
+  property="og:url"
+  content="https://uhxmedia.online/services/seo/"
+>
 <meta property="og:locale" content="en_IN">
 
-<!-- TWITTER / X -->
+<!-- TWITTER -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="SEO Agency in India | UHX MEDIA">
+<meta
+  name="twitter:title"
+  content="SEO Agency in India | UHX MEDIA"
+>
 <meta
   name="twitter:description"
-  content="SEO strategy built to improve visibility, organic traffic and long-term digital growth."
+  content="SEO strategy, technical optimization, content and search growth for businesses in India and worldwide."
 >
 
 <!-- ORGANIZATION -->
@@ -65,23 +79,24 @@
 }
 </script>
 
-<!-- SERVICE -->
+<!-- SEO SERVICE -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "SEO Services",
-  "serviceType": "Search Engine Optimization",
-  "url": "https://uhxmedia.online/services/seo/",
-  "description": "Search engine optimization services including technical SEO, on-page SEO, content strategy, local SEO and search growth strategy.",
+  "@id": "https://uhxmedia.online/services/seo/#service",
+  "name": "Search Engine Optimization",
+  "alternateName": "SEO Services",
+  "description": "Search engine optimization services covering technical SEO, on-page SEO, content strategy, keyword research and search visibility.",
   "provider": {
     "@id": "https://uhxmedia.online/#organization"
   },
-  "areaServed": "Worldwide"
+  "areaServed": "Worldwide",
+  "serviceType": "Search Engine Optimization"
 }
 </script>
 
-<!-- GOOGLE ANALYTICS -->
+<!-- GOOGLE ANALYTICS 4 -->
 <script
   async
   src="https://www.googletagmanager.com/gtag/js?id=G-VPQRBY2YKB"
@@ -102,16 +117,18 @@ gtag('config', 'G-VPQRBY2YKB');
 :root{
   --bg:#07070a;
   --panel:#101116;
-  --panel2:#15161c;
-  --text:#f4f4f0;
-  --muted:#a5a7af;
-  --line:rgba(255,255,255,.1);
-  --lime:#c7ff38;
-  --max:1180px;
+  --panel2:#15161d;
+  --text:#f4f5f7;
+  --muted:#a8abb5;
+  --line:rgba(255,255,255,.10);
+  --lime:#c8ff36;
+  --purple:#8b5cf6;
 }
 
 *{
   box-sizing:border-box;
+  margin:0;
+  padding:0;
 }
 
 html{
@@ -119,10 +136,9 @@ html{
 }
 
 body{
-  margin:0;
+  font-family:Inter,Arial,Helvetica,sans-serif;
   background:var(--bg);
   color:var(--text);
-  font-family:Inter,Arial,Helvetica,sans-serif;
   line-height:1.6;
 }
 
@@ -132,11 +148,11 @@ a{
 }
 
 .container{
-  width:min(var(--max),calc(100% - 40px));
+  width:min(1160px,92%);
   margin:auto;
 }
 
-header{
+nav{
   position:sticky;
   top:0;
   z-index:20;
@@ -145,7 +161,7 @@ header{
   border-bottom:1px solid var(--line);
 }
 
-.nav{
+.nav-inner{
   min-height:76px;
   display:flex;
   align-items:center;
@@ -154,7 +170,7 @@ header{
 }
 
 .logo{
-  font-size:22px;
+  font-size:24px;
   font-weight:900;
   letter-spacing:-1px;
 }
@@ -166,7 +182,11 @@ header{
 .nav-links{
   display:flex;
   gap:25px;
-  color:#c7c8cc;
+  align-items:center;
+}
+
+.nav-links a{
+  color:#c9cbd2;
   font-size:14px;
 }
 
@@ -178,52 +198,75 @@ header{
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  padding:14px 21px;
+  padding:14px 22px;
   border-radius:999px;
-  background:var(--lime);
-  color:#090a08;
   font-weight:800;
-  border:1px solid var(--lime);
+  font-size:14px;
+  transition:.25s ease;
 }
 
-.btn.secondary{
-  background:transparent;
-  color:var(--text);
-  border-color:var(--line);
+.btn-primary{
+  background:var(--lime);
+  color:#08090a;
+}
+
+.btn-primary:hover{
+  transform:translateY(-2px);
+  box-shadow:0 12px 30px rgba(200,255,54,.18);
+}
+
+.btn-outline{
+  border:1px solid var(--line);
+  color:#fff;
 }
 
 .hero{
-  padding:120px 0 90px;
-  min-height:720px;
-  display:flex;
-  align-items:center;
+  padding:130px 0 100px;
+  position:relative;
+  overflow:hidden;
+}
+
+.hero:before{
+  content:"";
+  position:absolute;
+  width:520px;
+  height:520px;
+  border-radius:50%;
+  background:rgba(139,92,246,.13);
+  filter:blur(100px);
+  top:-200px;
+  right:-160px;
 }
 
 .eyebrow{
   color:var(--lime);
-  text-transform:uppercase;
+  font-size:13px;
+  font-weight:900;
   letter-spacing:2px;
-  font-size:12px;
-  font-weight:800;
-  margin-bottom:22px;
+  text-transform:uppercase;
+  margin-bottom:20px;
 }
 
 h1{
-  font-size:clamp(54px,9vw,118px);
-  line-height:.9;
-  letter-spacing:-6px;
-  margin:0 0 30px;
-  max-width:1050px;
+  max-width:950px;
+  font-size:clamp(52px,8vw,108px);
+  line-height:.93;
+  letter-spacing:-5px;
+  margin-bottom:30px;
 }
 
-.hero p{
-  max-width:700px;
+.hero h1 span{
+  color:var(--lime);
+}
+
+.hero-text{
+  max-width:720px;
+  font-size:20px;
   color:var(--muted);
-  font-size:19px;
-  margin:0 0 35px;
+  margin-bottom:38px;
 }
 
-.actions{
+.hero-actions{
   display:flex;
   gap:14px;
   flex-wrap:wrap;
@@ -235,65 +278,72 @@ section{
 }
 
 .section-title{
-  font-size:clamp(38px,6vw,72px);
-  line-height:.95;
-  letter-spacing:-3px;
-  margin:0 0 20px;
+  max-width:800px;
+  margin-bottom:55px;
 }
 
-.section-intro{
+.section-title h2{
+  font-size:clamp(38px,5vw,68px);
+  line-height:1;
+  letter-spacing:-3px;
+  margin-bottom:18px;
+}
+
+.section-title p{
   color:var(--muted);
-  max-width:700px;
   font-size:18px;
 }
 
 .grid{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:16px;
-  margin-top:50px;
+  gap:18px;
 }
 
 .card{
-  background:var(--panel);
+  background:linear-gradient(145deg,var(--panel),var(--panel2));
   border:1px solid var(--line);
   border-radius:24px;
-  padding:30px;
-  min-height:220px;
+  padding:32px;
+  min-height:230px;
 }
 
 .card-number{
   color:var(--lime);
+  font-weight:900;
   font-size:13px;
-  font-weight:800;
+  margin-bottom:35px;
 }
 
 .card h3{
-  font-size:25px;
-  margin:25px 0 10px;
+  font-size:24px;
+  margin-bottom:12px;
 }
 
 .card p{
   color:var(--muted);
-  margin:0;
 }
 
 .process{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  gap:18px;
-  margin-top:50px;
+  gap:20px;
 }
 
 .process-item{
-  padding:32px 0;
-  border-top:1px solid var(--line);
+  border-left:2px solid var(--lime);
+  padding:10px 0 10px 25px;
 }
 
-.process-item strong{
-  display:block;
+.process-item span{
+  color:var(--lime);
+  font-size:13px;
+  font-weight:900;
+}
+
+.process-item h3{
   font-size:28px;
-  margin-bottom:12px;
+  margin:10px 0;
 }
 
 .process-item p{
@@ -302,37 +352,58 @@ section{
 
 .cta{
   background:
-    radial-gradient(circle at 80% 20%,rgba(199,255,56,.13),transparent 35%),
-    var(--panel);
+    radial-gradient(circle at 80% 20%,rgba(139,92,246,.18),transparent 35%),
+    linear-gradient(145deg,#101116,#09090c);
+}
+
+.cta-box{
   border:1px solid var(--line);
   border-radius:30px;
   padding:60px;
 }
 
-.cta h2{
-  font-size:clamp(42px,6vw,80px);
-  line-height:.95;
+.cta-box h2{
+  font-size:clamp(38px,6vw,75px);
+  line-height:1;
   letter-spacing:-3px;
-  margin:0 0 25px;
+  margin-bottom:18px;
+}
+
+.cta-box p{
+  color:var(--muted);
+  max-width:700px;
+  margin-bottom:30px;
 }
 
 form{
-  margin-top:35px;
+  margin-top:45px;
   display:grid;
-  gap:15px;
-  max-width:800px;
+  gap:16px;
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
 }
 
 input,
 select,
 textarea{
   width:100%;
-  background:#090a0e;
-  border:1px solid var(--line);
-  color:var(--text);
-  padding:16px 17px;
+  padding:16px 18px;
   border-radius:12px;
+  border:1px solid var(--line);
+  background:#0b0c10;
+  color:#fff;
   font:inherit;
+  outline:none;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+  border-color:var(--lime);
 }
 
 textarea{
@@ -340,53 +411,65 @@ textarea{
   resize:vertical;
 }
 
+select{
+  appearance:auto;
+}
+
 button{
-  cursor:pointer;
   border:0;
+  cursor:pointer;
   font:inherit;
 }
 
-.faq{
-  max-width:850px;
-  margin-top:40px;
-}
-
-details{
-  border-top:1px solid var(--line);
-  padding:22px 0;
-}
-
-summary{
-  cursor:pointer;
-  font-size:19px;
-  font-weight:700;
-}
-
-details p{
-  color:var(--muted);
-  margin:15px 0 0;
-}
-
 footer{
-  padding:50px 0;
+  padding:45px 0;
   border-top:1px solid var(--line);
-  color:var(--muted);
 }
 
-.footer-row{
+.footer-inner{
   display:flex;
   justify-content:space-between;
   gap:25px;
   flex-wrap:wrap;
 }
 
+.footer-inner p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+.footer-links{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  font-size:14px;
+}
+
+.footer-links a:hover{
+  color:var(--lime);
+}
+
 @media(max-width:800px){
+
   .nav-links{
     display:none;
   }
 
+  .hero{
+    padding:90px 0 75px;
+  }
+
   h1{
+    font-size:clamp(48px,14vw,78px);
     letter-spacing:-3px;
+  }
+
+  .hero-text{
+    font-size:17px;
+  }
+
+  section{
+    padding:75px 0;
   }
 
   .grid,
@@ -394,16 +477,22 @@ footer{
     grid-template-columns:1fr;
   }
 
-  .hero{
-    padding:90px 0 70px;
+  .form-grid{
+    grid-template-columns:1fr;
   }
 
-  section{
-    padding:75px 0;
-  }
-
-  .cta{
+  .cta-box{
     padding:35px 25px;
+  }
+}
+
+@media(prefers-reduced-motion:reduce){
+  html{
+    scroll-behavior:auto;
+  }
+
+  *{
+    transition:none!important;
   }
 }
 </style>
@@ -411,39 +500,54 @@ footer{
 
 <body>
 
-<header>
-  <div class="container nav">
-    <a class="logo" href="../../">UHX<span>.</span>MEDIA</a>
+<nav>
+  <div class="container nav-inner">
 
-    <nav class="nav-links">
+    <a class="logo" href="../../">
+      UHX<span>MEDIA</span>
+    </a>
+
+    <div class="nav-links">
       <a href="../../#about">About</a>
       <a href="../../#services">Services</a>
       <a href="../../#process">Process</a>
-      <a href="../../#contact">Contact</a>
-    </nav>
+      <a href="#request">Contact</a>
+    </div>
 
-    <a class="btn" href="#request">Start a project</a>
+    <a class="btn btn-primary" href="#request">
+      Start a Project
+    </a>
+
   </div>
-</header>
+</nav>
 
 <main>
 
 <section class="hero">
   <div class="container">
 
-    <div class="eyebrow">SEO · Search · Growth</div>
+    <div class="eyebrow">
+      SEO • SEARCH VISIBILITY • ORGANIC GROWTH
+    </div>
 
-    <h1>SEO THAT GETS FOUND.</h1>
+    <h1>
+      SEO THAT<br>
+      <span>GETS FOUND.</span>
+    </h1>
 
-    <p>
-      UHX MEDIA helps businesses improve search visibility, attract qualified
-      organic traffic and build sustainable digital growth through strategic SEO.
+    <p class="hero-text">
+      UHX MEDIA helps businesses improve search visibility through
+      technical SEO, keyword strategy, useful content and conversion-focused
+      digital experiences.
     </p>
 
-    <div class="actions">
-      <a class="btn" href="#request">Request SEO Strategy</a>
-      <a class="btn secondary" href="../../services/digital-marketing/">
-        Digital Marketing
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#request">
+        Request SEO Strategy
+      </a>
+
+      <a class="btn btn-outline" href="../../">
+        Explore UHX MEDIA
       </a>
     </div>
 
@@ -453,18 +557,18 @@ footer{
 <section>
   <div class="container">
 
-    <div class="eyebrow">What we do</div>
+    <div class="section-title">
+      <div class="eyebrow">WHAT WE DO</div>
 
-    <h2 class="section-title">
-      SEARCH VISIBILITY<br>
-      BUILT FOR GROWTH.
-    </h2>
+      <h2>
+        Search strategy built around the whole experience.
+      </h2>
 
-    <p class="section-intro">
-      SEO is more than rankings. We connect technical foundations,
-      useful content, search intent and digital experiences to create
-      a stronger organic growth system.
-    </p>
+      <p>
+        SEO works best when technical performance, content, user experience
+        and business objectives move in the same direction.
+      </p>
+    </div>
 
     <div class="grid">
 
@@ -472,35 +576,35 @@ footer{
         <div class="card-number">01</div>
         <h3>Technical SEO</h3>
         <p>
-          Improve crawlability, indexability, site architecture,
-          performance, canonicalization and technical foundations.
+          Improve crawlability, indexability, site structure, performance,
+          canonicalization and technical search foundations.
         </p>
       </article>
 
       <article class="card">
         <div class="card-number">02</div>
-        <h3>On-Page SEO</h3>
+        <h3>Keyword Research</h3>
         <p>
-          Optimize titles, headings, metadata, internal links,
-          content structure and search intent alignment.
+          Identify relevant search opportunities based on audience intent,
+          competition, business relevance and the customer journey.
         </p>
       </article>
 
       <article class="card">
         <div class="card-number">03</div>
-        <h3>Keyword Strategy</h3>
+        <h3>On-Page SEO</h3>
         <p>
-          Identify relevant search opportunities based on audience,
-          intent, competition and business objectives.
+          Optimize titles, descriptions, headings, internal links,
+          page structure and content around meaningful search intent.
         </p>
       </article>
 
       <article class="card">
         <div class="card-number">04</div>
-        <h3>Content SEO</h3>
+        <h3>Content Strategy</h3>
         <p>
-          Build content strategies designed around useful information,
-          topical relevance and long-term organic discovery.
+          Build useful search-focused content that answers real questions
+          and supports both discovery and conversion.
         </p>
       </article>
 
@@ -508,54 +612,66 @@ footer{
         <div class="card-number">05</div>
         <h3>Local SEO</h3>
         <p>
-          Strengthen local search visibility and improve how businesses
-          appear for relevant location-based searches.
+          Strengthen local search visibility through relevant location,
+          business and search presence signals where appropriate.
         </p>
       </article>
 
       <article class="card">
         <div class="card-number">06</div>
-        <h3>SEO Analytics</h3>
+        <h3>SEO Measurement</h3>
         <p>
-          Track organic visibility, search performance, landing pages
-          and meaningful growth signals using analytics and Search Console.
+          Track organic visibility, search performance, landing pages and
+          meaningful business actions using measurable data.
         </p>
       </article>
 
     </div>
+
   </div>
 </section>
 
 <section>
   <div class="container">
 
-    <div class="eyebrow">Our approach</div>
+    <div class="section-title">
+      <div class="eyebrow">OUR APPROACH</div>
 
-    <h2 class="section-title">DISCOVER → OPTIMIZE → GROW.</h2>
+      <h2>
+        Discover. Optimize. Improve.
+      </h2>
+
+      <p>
+        We treat SEO as an ongoing system rather than a one-time checklist.
+      </p>
+    </div>
 
     <div class="process">
 
       <div class="process-item">
-        <strong>01 — Discover</strong>
+        <span>01 / DISCOVER</span>
+        <h3>Understand</h3>
         <p>
-          Understand the business, audience, website, competitors,
-          search landscape and current SEO position.
+          Understand the business, audience, market, competitors,
+          current search presence and growth opportunities.
         </p>
       </div>
 
       <div class="process-item">
-        <strong>02 — Optimize</strong>
+        <span>02 / OPTIMIZE</span>
+        <h3>Build</h3>
         <p>
-          Fix technical issues, improve page structure,
-          target meaningful search terms and strengthen content.
+          Improve technical foundations, content structure,
+          keyword targeting and on-page search signals.
         </p>
       </div>
 
       <div class="process-item">
-        <strong>03 — Grow</strong>
+        <span>03 / IMPROVE</span>
+        <h3>Measure</h3>
         <p>
-          Measure performance, learn from search data and continuously
-          improve the organic growth system.
+          Monitor performance, learn from search data and continuously
+          improve pages and strategies.
         </p>
       </div>
 
@@ -567,39 +683,45 @@ footer{
 <section>
   <div class="container">
 
-    <div class="eyebrow">Why UHX MEDIA</div>
+    <div class="section-title">
+      <div class="eyebrow">WHY UHX MEDIA</div>
 
-    <h2 class="section-title">SEO CONNECTED TO THE EXPERIENCE.</h2>
+      <h2>
+        SEO connected to design, brand and growth.
+      </h2>
 
-    <p class="section-intro">
-      We don't treat SEO as an isolated marketing activity.
-      UX, web design, branding, content and digital marketing
-      all influence how people discover and experience a brand.
-    </p>
+      <p>
+        Search visibility is only one part of a successful digital experience.
+        UHX MEDIA connects SEO with UX, web design, branding and digital marketing.
+      </p>
+    </div>
 
     <div class="grid">
 
       <article class="card">
+        <div class="card-number">01</div>
         <h3>Human-first</h3>
         <p>
-          Search visibility starts with understanding what people
-          actually need and search for.
+          Search strategy starts with understanding what people actually
+          need, ask and look for.
         </p>
       </article>
 
       <article class="card">
-        <h3>Technical foundation</h3>
+        <div class="card-number">02</div>
+        <h3>Business-focused</h3>
         <p>
-          Strong SEO requires a website that search engines can
-          efficiently crawl, understand and index.
+          SEO decisions are connected to business objectives instead of
+          chasing traffic without context.
         </p>
       </article>
 
       <article class="card">
-        <h3>Business focused</h3>
+        <div class="card-number">03</div>
+        <h3>Experience-driven</h3>
         <p>
-          SEO activity should connect to meaningful business goals,
-          not simply a collection of ranking numbers.
+          Search visitors should land on useful, clear and convincing
+          digital experiences.
         </p>
       </article>
 
@@ -608,18 +730,23 @@ footer{
   </div>
 </section>
 
-<section id="request">
+<section class="cta" id="request">
+
   <div class="container">
 
-    <div class="cta">
+    <div class="cta-box">
 
-      <div class="eyebrow">Start a conversation</div>
+      <div class="eyebrow">
+        START A CONVERSATION
+      </div>
 
-      <h2>READY TO BE FOUND?</h2>
+      <h2>
+        Ready to improve your search visibility?
+      </h2>
 
-      <p class="section-intro">
-        Tell us about your website, business and growth goals.
-        We'll understand the opportunity and shape the right direction.
+      <p>
+        Tell us about your business, website and goals.
+        We'll understand the opportunity and determine the right direction.
       </p>
 
       <form
@@ -644,50 +771,67 @@ footer{
           style="display:none"
         >
 
-        <input
-          type="text"
-          name="name"
-          placeholder="Your name *"
-          autocomplete="name"
-          required
-        >
+        <div class="form-grid">
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Your name *"
+            autocomplete="name"
+            required
+          >
+
+          <input
+            type="text"
+            name="company"
+            placeholder="Company"
+            autocomplete="organization"
+          >
+
+        </div>
+
+        <div class="form-grid">
+
+          <input
+            type="email"
+            name="email"
+            placeholder="Email address *"
+            autocomplete="email"
+            required
+          >
+
+          <input
+            type="tel"
+            name="phone"
+            placeholder="Phone number"
+            autocomplete="tel"
+          >
+
+        </div>
+
+        <select name="service" required>
+          <option value="">Select service *</option>
+          <option value="SEO">SEO</option>
+          <option value="Technical SEO">Technical SEO</option>
+          <option value="Local SEO">Local SEO</option>
+          <option value="SEO + Digital Marketing">SEO + Digital Marketing</option>
+          <option value="Other">Other</option>
+        </select>
 
         <input
           type="text"
-          name="company"
-          placeholder="Company / Brand"
-          autocomplete="organization"
-        >
-
-        <input
-          type="email"
-          name="email"
-          placeholder="Email address *"
-          autocomplete="email"
-          required
-        >
-
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Phone number"
-          autocomplete="tel"
-        >
-
-        <input
-          type="hidden"
-          name="service"
-          value="SEO"
+          name="budget"
+          placeholder="Estimated budget"
         >
 
         <textarea
           name="message"
-          placeholder="Tell us about your SEO goals *"
+          placeholder="Tell us about your website, goals and current challenges *"
           required
         ></textarea>
 
-        <button class="btn" type="submit">
-          Send SEO Request
+        <button class="btn btn-primary" type="submit">
+          Request SEO Consultation
         </button>
 
       </form>
@@ -695,83 +839,44 @@ footer{
     </div>
 
   </div>
-</section>
 
-<section>
-  <div class="container">
-
-    <div class="eyebrow">FAQ</div>
-
-    <h2 class="section-title">COMMON QUESTIONS.</h2>
-
-    <div class="faq">
-
-      <details>
-        <summary>What SEO services does UHX MEDIA provide?</summary>
-        <p>
-          We provide technical SEO, on-page SEO, keyword strategy,
-          content SEO, local SEO and SEO analytics.
-        </p>
-      </details>
-
-      <details>
-        <summary>Do you work with businesses outside India?</summary>
-        <p>
-          Yes. UHX MEDIA is based in India and works with businesses
-          and brands across India and worldwide.
-        </p>
-      </details>
-
-      <details>
-        <summary>How long does SEO take?</summary>
-        <p>
-          SEO is a long-term process. The timeline depends on the
-          website, competition, search demand, technical condition
-          and quality of implementation.
-        </p>
-      </details>
-
-      <details>
-        <summary>Can SEO work with our existing website?</summary>
-        <p>
-          Yes. We can audit an existing website and identify technical,
-          content, UX and search opportunities before recommending changes.
-        </p>
-      </details>
-
-    </div>
-
-  </div>
 </section>
 
 </main>
 
 <footer>
-  <div class="container footer-row">
 
-    <div>
-      <strong>UHX MEDIA</strong><br>
-      Digital experiences. Built to perform.
-    </div>
+  <div class="container footer-inner">
 
-    <div>
-      India → Worldwide<br>
-      <a href="mailto:UHXMEDIA@GMAIL.COM">UHXMEDIA@GMAIL.COM</a>
+    <p>
+      © 2026 UHX MEDIA — Unified Human Experience
+    </p>
+
+    <div class="footer-links">
+
+      <a href="../../">Home</a>
+
+      <a href="../digital-marketing/">
+        Digital Marketing
+      </a>
+
+      <a href="mailto:UHXMEDIA@GMAIL.COM">
+        UHXMEDIA@GMAIL.COM
+      </a>
+
+      <a href="https://www.instagram.com/uhxmedia/" target="_blank" rel="noopener">
+        Instagram
+      </a>
+
+      <a href="https://www.linkedin.com/company/uhxmedia/" target="_blank" rel="noopener">
+        LinkedIn
+      </a>
+
     </div>
 
   </div>
-</footer>
 
-<script>
-document.querySelector('.request-form')?.addEventListener('submit', function(){
-  if(typeof gtag === 'function'){
-    gtag('event','form_submit',{
-      form_name:'lead-form',
-      service:'SEO'
-    });
-  }
-});
-</script>
+</footer>
 
 </body>
 </html>
